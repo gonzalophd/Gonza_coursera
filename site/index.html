@@ -2,37 +2,67 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Our Menu</title>
+        <title>Rocket League Cars</title>
         <style>
             * {
             box-sizing: border-box;
+
             }
 
+            body {
+                background-color:rgb(178, 213, 227,20);
+
+            }
             h1 {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-align:center
             }
 
-            p {
-            border: 1px solid black;
-            background-color: #2aa595;
-            width: 100%;
-            height: 200px;
-            margin-right: 2px;
-            margin-left: 2px;
-            font-family: Helvetica;
-            color: rgb(0, 0, 0);
+            h2 {
+                font-size: 150%;
+                background-color: royalblue;
+                float:right;
+                 position:relative;    
+                top: -22px;
+                right: -2px;
+                font-weight: bold;
+                width: 150px;
+                text-align: center;
+                border: 2px solid black;
             }
-
+            
             .row {
             width: 100%;
             }
 
+            p {
+            height: 130px;
+            position:relative;
+            top: -20px;
+
+            margin: 10px;
+            text-align:justify;
+            clear: right;
+            }
+
+            div#container {
+                margin: 0px 00px 00px 0px;
+                height: 200px;
+                padding: 5px;
+                box-sizing:border-box;
+            }
+
+            #containt{
+                background-color:khaki;
+                border: 2px solid black;
+                height: 190px;
+
+            }
             /********** Large devices only **********/
             @media (min-width: 992px) {
             .col-lg-4,.col-lg-6,.col-lg-12 {
                 float: left;
-                border: 1px solid green;
+                margin: 0px 10px 0px 0px;
             }
         
             .col-lg-4 {
@@ -52,11 +82,11 @@
             @media (min-width: 768px) and (max-width: 991px) {
             .col-md-4, .col-md-6, .col-md-12 {
                 float: left;
-                border: 1px solid green;
+                margin: 0px 10px 0px 0px;
             }
             
             .col-md-4 {
-                width: 33.33%;
+                width: 33.3%;
             }
             .col-md-6 {
                 width: 50%;
@@ -65,28 +95,44 @@
                 width: 100%;
             }
             }
+  
 
-            #p1 {
-            background-color: #A52A2A;
+            @media (max-width: 767px) {
+             .col-sd-12 {
+                float: left;
+                margin: 0px 10px 0px 0px;
             }
-
-            #p2 {
-            background-color: #a1a52a;
+            
+            .col-sd-12 {
+                width: 100%;
             }
-
-            #p3 {
-            background-color: #2e2aa5;
             }
         </style>
     </head>
 
 <body>
-    <h1>Our Menu</h1>
+    <h1>Rocket League Cars</h1>
 
     <div class="row">
-      <div class="col-lg-4 col-md-6"><p id="p1">Potatos</p></div>
-      <div class="col-lg-4 col-md-6"><p id="p2">Sushi</p></div>
-      <div class="col-lg-4 col-md-12"><p id="p3" >Salad</p></div>
+        <div class="col-lg-4 col-md-6 col-sd-12" id="container">
+            <div id="containt">
+                <h2 id="h2">Octane</h2>
+                <p> The Octane is a vehicle body released on July 7, 2015. It's also classified as the "tryhard car", as all the pro-players (and tryhards in game) use it for gamming. It's currently accepted that it's the most balanced car.</p>   
+            </div>    
+        </div>
+        <div class="col-lg-4 col-md-6 col-sd-12" id="container" >
+            <div id="containt">
+                <h2 id="h2"> Dominus </h2>
+                <p> The Dominus is a vehicle released on August 13 2015, which could only be obtained as DLC from the Supersonic Fury DLC Pack before it was made unlockable for free without purchase. </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sd-12" id="container">
+            <div id="containt">
+                <h2 id="h2">Scarab</h2>
+                <p >The Scarab appears to look like a beetle insect. It has two exhaust pipes on the topper and various fins on the rear end that extend away from the body when increasing speed, and more when boosting. Looks like an egg, It isn't occupied much in comparison with the other 2 cars, but some people use it.</p>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
